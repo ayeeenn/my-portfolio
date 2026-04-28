@@ -794,9 +794,10 @@ header {
   margin-bottom: var(--mb-1-5);
   font-size: 0.875rem;
   line-height: 1.7;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  hyphens: auto;
+  word-wrap: normal;
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: none;
 }
 
 .about__info {
