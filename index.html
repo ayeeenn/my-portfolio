@@ -190,8 +190,9 @@
         />
         <div class="about__data">
           <p class="about__description">
-            I am a college student currently studying Industrial Engineering. I
-            have basic knowledge of Microsoft Excel and I am continuously
+            I am a college student currently studying Industrial Engineering.
+            <br />
+            I have basic knowledge of Microsoft Excel and I am continuously
             learning more about its features, functions, and shortcuts to
             improve my efficiency and productivity. <br /><br />
             I consider myself an ambivert—I can easily adjust to different
@@ -528,16 +529,7 @@
       // }
 
       var r = document.querySelector(":root");
-      var hexArray = [
-        "#e91f64",
-        "#9c28b0",
-        "#282bb0",
-        "#58acdc",
-        "#f1c84f",
-        "#61c689",
-        "#d2330b",
-        "#922fe9",
-      ];
+      var hexArray = ["#FF9A86", "#FFB399"];
       var randomColor = hexArray[Math.floor(Math.random() * hexArray.length)];
       // Set the value of variable --blue to another value (in this case "lightblue")
       r.style.setProperty("--first-color", randomColor);
