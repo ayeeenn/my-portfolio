@@ -248,8 +248,10 @@ function setHomeImage(theme) {
 
 function setAboutImage(theme) {
   if (!aboutImg) return;
-  // Use the available image as fallback
-  aboutImg.src = "assets/images/aienne.png";
+  aboutImg.src =
+    theme === "dark"
+      ? "assets/images/a829ca46-732d-41d3-98a7-e279ecdeb7e8.jpg"
+      : "assets/images/efe67a28-2e49-4807-9d8a-421e19cc8328.jpg";
 }
 
 // Check localStorage for theme preference
