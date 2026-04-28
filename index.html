@@ -15,7 +15,7 @@
       name="description"
       content="Portfolio website of CJay. A summary of professional experience,  skills, projects details and contact information."
     />
-    <title>CJay - Portfolio</title>
+    <title>Ayen - Portfolio</title>
 
     <!--==================== OPEN GRAPH META TAGS ===================== -->
     <meta property="og:title" content="CJay - Portfolio" />
@@ -41,21 +41,21 @@
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="assets/images/1696427253476.jpg"
+      href="assets/images/aienne.png"
     />
     <link
       rel="icon"
-      type="image/jpeg"
+      type="image/png"
       sizes="32x32"
-      href="assets/images/1696427253476.jpg"
+      href="assets/images/aienne.png"
     />
     <link
       rel="icon"
-      type="image/jpeg"
+      type="image/png"
       sizes="16x16"
-      href="assets/images/1696427253476.jpg"
+      href="assets/images/aienne.png"
     />
-    <link rel="icon" type="image/jpeg" href="assets/images/1696427253476.jpg" />
+    <link rel="icon" type="image/png" href="assets/images/aienne.png" />
 
     <!--==================== SWIPER CSS ====================-->
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
@@ -64,7 +64,8 @@
     <link rel="stylesheet" href="assets/css/styles.css" />
     <style>
       .back {
-        background-color: var(--first-color);
+        /* keep only shape; avoid background color so broken image doesn't show a solid block */
+        background-color: transparent;
         border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
       }
     </style>
@@ -193,18 +194,27 @@
             </div>
 
             <div class="home__img">
-              <img class="back" id="home-img" src="assets/images/CJay.png" />
+              <img
+                class="back"
+                id="home-img"
+                src="assets/images/aienne.png"
+                loading="eager"
+                decoding="async"
+                alt="Profile image"
+                width="1200"
+                height="1200"
+              />
             </div>
 
             <div class="home__data">
               <h1 class="home__title">
                 Hi, I am
-                <span class="title-highlight">Christian Jay Mandani</span>
+                <span class="title-highlight">Aienne Joy R. Facun</span>
               </h1>
-              <h3 class="home__subtitle">IT Student | Full-Stack Developer</h3>
+              <h3 class="home__subtitle">Industrial Engineering Student</h3>
               <p class="home__description">
-                I want to work with others to learn from them and gain more
-                knowledge.
+                Eager to work with others, learn from different perspectives,
+                and gain knowledge to improve systems and productivity.
               </p>
             </div>
           </div>
@@ -226,8 +236,8 @@
 
       <div class="about__container container grid">
         <img
-          src="assets/images/day.png"
-          alt=""
+          src="assets/images/aienne.png"
+          alt="About image"
           class="about__image"
           id="about-img"
         />

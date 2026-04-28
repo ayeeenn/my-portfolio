@@ -68,14 +68,16 @@
   border-radius: 10px !important;
   border: 4px solid var(--first-color) !important;
   box-shadow: 0 8px 32px rgba(88, 172, 220, 0.3) !important;
-  transition: all 0.3s ease !important;
+  /* only animate transform and shadow to avoid layout shift on load */
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
   width: min(300px, 70vw) !important;
   height: auto !important;
   max-width: 100% !important;
   object-fit: cover !important;
   display: block !important;
   margin: 0 auto !important;
-  aspect-ratio: auto !important;
+  /* reserve square space to prevent layout shift (adjust if image is not square) */
+  aspect-ratio: 1 / 1 !important;
 }
 
 .back:hover {

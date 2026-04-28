@@ -242,20 +242,14 @@ const aboutImg = document.getElementById("about-img");
 
 function setHomeImage(theme) {
   if (!homeImg) return;
-  if (theme === "dark") {
-    homeImg.src = "assets/images/CJay.png";
-  } else {
-    homeImg.src = "assets/images/image1.jpg";
-  }
+  // Use the available image to avoid 404s; replace with theme-specific images if added
+  homeImg.src = "assets/images/aienne.png";
 }
 
 function setAboutImage(theme) {
   if (!aboutImg) return;
-  if (theme === "dark") {
-    aboutImg.src = "assets/images/night.png";
-  } else {
-    aboutImg.src = "assets/images/day.png";
-  }
+  // Use the available image as fallback
+  aboutImg.src = "assets/images/aienne.png";
 }
 
 // Check localStorage for theme preference
