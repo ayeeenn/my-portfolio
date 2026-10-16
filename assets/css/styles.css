@@ -23,7 +23,7 @@
   /* HSL color mode */
   --trans: 0.388;
   --first-color: #000000;
-  --first-color-second: rgb(0, 0, 0);
+  --first-color-second: hsl(var(--hue-color), 70%, 96%);
   --first-color-alt: var(--first-color);
   --first-color-lighter: var(--first-color);
   --title-color: hsl(var(--hue-color), 8%, 15%);
@@ -3008,13 +3008,18 @@ textarea.contact__input {
 
 .footer {
   padding-top: 2rem;
+  overflow: hidden;
 }
 .footer__container {
   row-gap: 3.5rem;
+  overflow: visible;
 }
 .footer__bg {
   background-color: var(--first-color-second);
   padding: 2rem 0 3rem;
+  border-top: 1px solid rgba(128, 128, 128, 0.12);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  overflow: hidden;
 }
 .portfolio__title {
   font-size: var(--h1-font-size);
@@ -3034,6 +3039,7 @@ textarea.contact__input {
 .footer__social {
   font-size: 1.25rem;
   margin-right: var(--mb-1-5);
+  transition: color 0.3s ease;
 }
 .footer__social:hover {
   color: var(--first-color-lighter);
@@ -3045,10 +3051,12 @@ textarea.contact__input {
   margin-top: var(--mb-3);
 }
 .footer__title,
-.footer__subtitle,
 .footer__link,
 .footer__social {
-  color: #fff;
+  color: var(--title-color);
+}
+.footer__subtitle {
+  color: var(--text-color);
 }
 
 /*========== SCROLL UP ==========*/
